@@ -1,0 +1,48 @@
+{
+  "name": "Build a cognitive recommendation app with Swift",
+  "description": "Build a Swift-based mobile chatbot to provide recommendations, reservations, and event planning",
+  "thumbnailURL": "blueprint/thumbnail.svg",
+  "appIconURL": "blueprint/appicon.svg",
+  "previewURLs": [],
+  "type": "WEB",
+  "tags": [
+    "mobile",
+    "watson",
+    "appservice"
+  ],
+  "generators": {
+    "node": [
+      "generator-starterkit-content-downloader",
+      "generator-ibm-cloud-enablement"
+    ]
+  },
+  "generatorOptions": {
+    "generator-starterkit-content-downloader": {
+      "registry": "https://npm-registry.whitewater.ibm.com",
+      "scope": "@arf",
+      "version": "0.0.x"
+    },
+    "generator-ibm-cloud-enablement": {
+      "version": "0.0.x"
+    }
+  },
+  "requiredCapabilities": [
+    "conversation",
+    "naturalLanguageUnderstanding",
+    "speechToText",
+    "textToSpeech"
+  ],
+  "requiredCapabilitiesURLs": {
+    "conversation": "https://console.bluemix.net/catalog/services/conversation",
+    "naturalLanguageUnderstanding": "https://console.bluemix.net/catalog/services/natural-language-understanding",
+    "speechToText": "https://console.bluemix.net/catalog/services/speech-to-text",
+    "textToSpeech": "https://console.bluemix.net/catalog/services/text-to-speech"
+  },
+  "servicePlans": {
+    "conversation": "free",
+    "naturalLanguageUnderstanding": "free",
+    "speechToText": "standard",
+    "textToSpeech": "standard"
+  },
+  "email": "cloud@us.ibm.com"
+}
