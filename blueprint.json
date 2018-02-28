@@ -1,23 +1,7 @@
 {
-  "name": "Build a cognitive recommendation app with Swift",
-  "description": "Build a Swift-based mobile chatbot to provide recommendations, reservations, and event planning",
-  "thumbnailURL": "blueprint/thumbnail.svg",
   "appIconURL": "blueprint/appicon.svg",
-  "previewURLs": [],
-  "type": "WEB",
-  "tags": [
-    "cli",
-    "mobile",
-    "watson",
-    "appservice"
-  ],
-  "generators": {
-    "node": [
-      "generator-ibm-cloud-enablement",
-      "generator-ibm-service-enablement",
-      "generator-starterkit-content-downloader"
-    ]
-  },
+  "description": "Build a Swift-based mobile chatbot to provide recommendations, reservations, and event planning",
+  "email": "cloud@us.ibm.com",
   "generatorOptions": {
     "generator-ibm-cloud-enablement": {
       "version": "0.x"
@@ -31,6 +15,15 @@
       "version": "0.x"
     }
   },
+  "generators": {
+    "node": [
+      "generator-ibm-cloud-enablement",
+      "generator-ibm-service-enablement",
+      "generator-starterkit-content-downloader"
+    ]
+  },
+  "name": "Build a cognitive recommendation app with Swift",
+  "previewURLs": [],
   "requiredCapabilities": [
     "conversation",
     "naturalLanguageUnderstanding",
@@ -49,5 +42,12 @@
     "speechToText": "standard",
     "textToSpeech": "standard"
   },
-  "email": "cloud@us.ibm.com"
+  "tags": [
+    "cli",
+    "mobile",
+    "watson",
+    "appservice"
+  ],
+  "thumbnailURL": "blueprint/thumbnail.svg",
+  "type": "WEB"
 }
