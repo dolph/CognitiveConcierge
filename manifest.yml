@@ -14,13 +14,16 @@ declared-services:
     plan: free
 applications:
 - name: CognitiveConcierge
-  path: ./CognitiveConcierge-Server
-  random-route: true
+  buildpack: swift_buildpack
+  # command: "'pwd'"  # bx dev enable
   command: restaurant-recommendations -bind 0.0.0.0:$PORT
-  memory: 512M
   disk_quota: 1024M
   instances: 1
-  buildpack: swift_buildpack
+  memory: 512M
+  name: pwd
+  path: ./CognitiveConcierge-Server
+  random-route: true
+  timeout: 180
   services:
   - CognitiveConcierge-Conversation
   - CognitiveConcierge-Speech-To-Text

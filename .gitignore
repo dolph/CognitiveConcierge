@@ -1,3 +1,8 @@
 .build/*
 Packages/*
 *.DS_Store
+credentials.json
+config.json
+spec.json
+localdev-config.json
+config/localdev-config.json
