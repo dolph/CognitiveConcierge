@@ -3,20 +3,27 @@
   "description": "Build a Swift-based mobile chatbot to provide recommendations, reservations, and event planning",
   "email": "cloud@us.ibm.com",
   "generatorOptions": {
+    "generator-git-starterkit-credentials-builder": {
+      "scope": "@arf",
+      "version": "0.x.x"
+    },
     "generator-ibm-cloud-enablement": {
-      "version": "0.x"
+      "options": {
+        "port": "3000"
+      },
+      "version": "0.8.x"
     },
     "generator-ibm-service-enablement": {
-      "version": "0.x"
+      "version": "0.6.4"
     },
     "generator-starterkit-content-downloader": {
-      "registry": "https://na.artifactory.swg-devops.com/artifactory/api/npm/bmd-npm-virtual",
       "scope": "@arf",
-      "version": "0.x"
+      "version": "0.x.x"
     }
   },
   "generators": {
     "node": [
+      "generator-git-starterkit-credentials-builder",
       "generator-ibm-cloud-enablement",
       "generator-ibm-service-enablement",
       "generator-starterkit-content-downloader"
